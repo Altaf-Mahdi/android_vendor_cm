@@ -34,6 +34,7 @@ k=$(expr $i - 1)
 done
 
 sed -i 's/project/   */g' $Changelog
+sed -i -e 's/^/  /' $Changelog
 
 if [ -e $out/*/$Changelog ]
 then
